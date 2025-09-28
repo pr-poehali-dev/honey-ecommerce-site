@@ -102,8 +102,18 @@ const Index = () => {
       </nav>
 
       {/* Главная секция */}
-      <section id="home" className="py-20 bg-nature-gradient">
-        <div className="container mx-auto px-4">
+      <section 
+        id="home" 
+        className="py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: `url('https://cdn.poehali.dev/files/c4312654-fc2a-4a94-b582-8eadb254b75d.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h2 className="text-5xl font-bold mb-6 text-shadow">
